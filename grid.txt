@@ -1,0 +1,196 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+.ppm3{--pt:#FF5A3C;--pt-d:#e0431f;--ink:#17181c;--ink2:#4a4d55;--mut:#868a93;--line:#edeef1;--soft:#f6f7f9;--cream:#FFF4EF;--dark:#16171b;
+ font-family:"Pretendard",-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);line-height:1.65;background:#fff;-webkit-font-smoothing:antialiased;}
+.ppm3 *{box-sizing:border-box;margin:0;}
+.ppm3 img{max-width:100%;display:block;}
+.ppm3 a{text-decoration:none;color:inherit;}
+.ppm3 .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+.ppm3 .kick{display:inline-block;font-size:13px;font-weight:700;color:var(--pt);background:var(--cream);padding:7px 15px;border-radius:999px;}
+.ppm3 h1{font-size:clamp(31px,5vw,54px);line-height:1.16;font-weight:800;letter-spacing:-.035em;}
+.ppm3 h2{font-size:clamp(24px,3.3vw,36px);line-height:1.25;font-weight:800;letter-spacing:-.03em;}
+.ppm3 h3{font-size:18px;font-weight:700;letter-spacing:-.01em;}
+.ppm3 p{color:var(--ink2);}
+.ppm3 .lead{font-size:clamp(16px,1.7vw,19px);color:var(--ink2);}
+.ppm3 .mut{color:var(--mut);}
+.ppm3 .sec{padding:80px 0;}
+.ppm3 .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15.5px;border-radius:14px;padding:15px 26px;transition:.16s;cursor:pointer;border:1.5px solid transparent;}
+.ppm3 .btn svg{width:17px;height:17px;}
+.ppm3 .btn-pt{background:var(--pt);color:#fff;box-shadow:0 8px 22px -10px rgba(255,90,60,.8);}
+.ppm3 .btn-pt:hover{background:var(--pt-d);transform:translateY(-1px);}
+.ppm3 .btn-out{background:#fff;color:var(--ink);border-color:#e2e3e7;}
+.ppm3 .btn-out:hover{border-color:#c7c9cf;}
+.ppm3 .head{max-width:720px;margin:0 auto 44px;text-align:center;}
+.ppm3 .head .kick{margin-bottom:15px;}
+.ppm3 .head p{margin-top:13px;}
+.ppm3 .hw{font-family:"Nanum Pen Script",cursive;display:inline-block;line-height:1;white-space:nowrap;}
+.ppm3 .hw-en{font-family:"Caveat",cursive;font-weight:600;}
+.ppm3 .scrib{display:inline-block;}
+.ppm3 .scrib path{fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;}
+
+/* breadcrumb */
+.ppm3 .crumb{border-bottom:1px solid var(--line);}
+.ppm3 .crumb .in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--mut);font-weight:600;flex-wrap:wrap;}
+.ppm3 .crumb a{color:var(--mut);} .ppm3 .crumb a:hover{color:var(--pt);}
+.ppm3 .crumb .sep{opacity:.5;} .ppm3 .crumb .cur{color:var(--ink);}
+
+/* hero */
+.ppm3 .hero{background:radial-gradient(78% 62% at 50% -8%,var(--cream),#fff 70%);padding:60px 0 0;text-align:center;}
+.ppm3 .hero .kick{margin-bottom:20px;}
+.ppm3 .hero p.sub{max-width:640px;margin:20px auto 0;font-size:clamp(15.5px,1.7vw,18.5px);color:var(--ink2);}
+.ppm3 .hero .cta{display:flex;gap:12px;justify-content:center;margin:30px 0 10px;flex-wrap:wrap;}
+.ppm3 .heroviz{max-width:900px;margin:44px auto 0;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:0 34px 70px -34px rgba(20,22,28,.34);}
+.ppm3 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:42px;}
+.ppm3 .strip .s{background:var(--soft);border-radius:14px;padding:18px 16px;text-align:center;}
+.ppm3 .strip .s .v{font-size:17px;font-weight:800;letter-spacing:-.02em;}
+.ppm3 .strip .s .l{font-size:12.5px;color:var(--mut);margin-top:4px;}
+
+/* intro + steps */
+.ppm3 .intro{max-width:760px;margin:0 auto;text-align:center;font-size:clamp(16px,1.8vw,19px);color:var(--ink2);}
+.ppm3 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:46px;}
+.ppm3 .steps.s3{grid-template-columns:repeat(3,1fr);max-width:820px;margin-left:auto;margin-right:auto;}
+.ppm3 .step{padding:26px 22px;border-radius:18px;border:1px solid var(--line);background:#fff;}
+.ppm3 .step .no{font-size:12px;font-weight:800;color:var(--pt);letter-spacing:.09em;}
+.ppm3 .step h3{margin:9px 0 7px;font-size:16px;}
+.ppm3 .step p{font-size:14px;}
+
+/* cards (benefits + customization) */
+.ppm3 .bcards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.ppm3 .bcard{padding:28px;border-radius:18px;border:1px solid var(--line);background:#fff;}
+.ppm3 .bcard .ic{width:44px;height:44px;border-radius:12px;background:var(--cream);color:var(--pt);display:flex;align-items:center;justify-content:center;margin-bottom:15px;font-size:20px;}
+.ppm3 .bcard h3{font-size:16.5px;margin-bottom:7px;}
+.ppm3 .bcard p{font-size:14.5px;}
+.ppm3 .custom-sec{background:var(--soft);}
+
+/* diff / fit */
+.ppm3 .flist{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px;}
+.ppm3 .fitem{display:flex;gap:12px;align-items:flex-start;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:14px;font-size:15px;color:var(--ink2);}
+.ppm3 .fitem b{color:var(--ink);}
+.ppm3 .fitem .dot{flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:var(--pt);margin-top:8px;}
+
+/* cases */
+.ppm3 .case .cb .cl{display:block;margin-top:9px;font-size:12.5px;font-weight:700;color:var(--pt);}
+.ppm3 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.ppm3 .cases.c1{grid-template-columns:minmax(0,460px);justify-content:center;}
+.ppm3 .cases.c2{grid-template-columns:repeat(2,1fr);max-width:760px;margin:0 auto;}
+.ppm3 .case{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;transition:.16s;}
+.ppm3 .case:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px rgba(20,22,28,.25);border-color:transparent;}
+.ppm3 .case .th{aspect-ratio:16/10;background:#e9ebef;overflow:hidden;}
+.ppm3 .case .th img{width:100%;height:100%;object-fit:cover;}
+.ppm3 .case .cb{padding:15px 17px 17px;font-size:14.5px;font-weight:700;color:var(--ink);}
+
+/* case slider */
+.ppm3 .sldr{position:relative;}
+.ppm3 .slider{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 16px;scrollbar-width:thin;}
+.ppm3 .slider .case{flex:0 0 300px;scroll-snap-align:start;}
+.ppm3 .slider::-webkit-scrollbar{height:8px;}
+.ppm3 .slider::-webkit-scrollbar-thumb{background:#d7d9de;border-radius:99px;}
+.ppm3 .snav{position:absolute;top:38%;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px -10px rgba(20,22,28,.4);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:4;font-size:20px;color:var(--ink);}
+.ppm3 .snav:hover{border-color:var(--pt);color:var(--pt);}
+.ppm3 .sprev{left:-14px;} .ppm3 .snext{right:-14px;}
+.ppm3 .shint{text-align:center;font-size:13px;color:var(--mut);margin-top:6px;}
+
+/* cross-links */
+.ppm3 .xgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.ppm3 .xcard{display:flex;gap:14px;align-items:center;padding:20px 22px;border:1px solid var(--line);border-radius:16px;background:#fff;transition:.16s;}
+.ppm3 .xcard:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px rgba(20,22,28,.25);border-color:transparent;}
+.ppm3 .xcard .em{font-size:26px;flex:0 0 auto;width:52px;height:52px;border-radius:14px;background:var(--cream);display:flex;align-items:center;justify-content:center;}
+.ppm3 .xcard .xt h3{font-size:15.5px;} .ppm3 .xcard .xt p{font-size:13px;color:var(--mut);margin-top:3px;}
+.ppm3 .backrow{display:flex;justify-content:center;margin-top:30px;}
+.ppm3 .backrow a{font-size:14.5px;font-weight:700;color:var(--pt);}
+
+/* cta band */
+.ppm3 .cta-band{background:radial-gradient(80% 120% at 50% -20%,var(--cream),#fff);border:1px solid var(--line);border-radius:26px;padding:70px 40px;text-align:center;}
+.ppm3 .cta-band .cta{display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap;}
+
+/* ===== STAGE (LED screen) ===== */
+.ppm3 .stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:radial-gradient(120% 100% at 50% 0%,#20242c,#0c0e12 80%);}
+
+/* bubble: rise full height */
+.ppm3 .bub{position:absolute;bottom:-18%;display:flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:18px 18px 18px 4px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.2);backdrop-filter:blur(2px);animation:bubRise linear infinite;}
+@keyframes bubRise{0%{bottom:-18%;opacity:0;}9%{opacity:1;}88%{opacity:1;}100%{bottom:118%;opacity:0;}}
+
+/* floar ribbon */
+.ppm3 .stage-floar{background:radial-gradient(120% 140% at 50% 50%,#1c2029,#0b0d11 85%);}
+.ppm3 .ribbon{position:absolute;left:0;right:0;top:40%;height:20%;background:linear-gradient(#0a0b0e,#111318);border-top:1px solid rgba(255,90,60,.35);border-bottom:1px solid rgba(255,90,60,.35);overflow:hidden;}
+.ppm3 .fsig{position:absolute;top:50%;left:-20%;opacity:0;transform:translateY(-50%);white-space:nowrap;animation:floarFlow linear infinite backwards;}
+@keyframes floarFlow{0%{left:-18%;opacity:0;}9%{opacity:1;}90%{opacity:1;}100%{left:106%;opacity:0;}}
+.ppm3 .rcap{position:absolute;left:0;right:0;bottom:11%;text-align:center;font-size:11.5px;color:rgba(255,255,255,.5);font-weight:600;letter-spacing:.04em;}
+.ppm3 .rdim{position:absolute;left:0;right:0;top:calc(40% - 20px);text-align:center;font-size:10.5px;color:rgba(255,90,60,.85);font-weight:700;}
+
+/* floor drift */
+.ppm3 .dsig{position:absolute;}
+.ppm3 .dsig.a{animation:driftA ease-in-out infinite alternate;}
+.ppm3 .dsig.b{animation:driftB ease-in-out infinite alternate;}
+.ppm3 .dsig.c{animation:driftC ease-in-out infinite alternate;}
+@keyframes driftA{0%{transform:translate(0,0) rotate(-3deg);}100%{transform:translate(26px,-20px) rotate(3deg);}}
+@keyframes driftB{0%{transform:translate(0,0) rotate(2deg);}100%{transform:translate(-24px,18px) rotate(-4deg);}}
+@keyframes driftC{0%{transform:translate(0,0) rotate(-2deg);}100%{transform:translate(18px,24px) rotate(4deg);}}
+
+/* grid 5x3 */
+.ppm3 .stage-grid{background:radial-gradient(120% 120% at 50% 0%,#1b1f27,#0a0c10 82%);}
+.ppm3 .gwrap{position:absolute;inset:7% 6%;display:grid;grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(3,1fr);gap:2%;}
+.ppm3 .slot{border-radius:9px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;overflow:hidden;opacity:0;animation:slotFill .5s ease forwards;}
+.ppm3 .zoom{position:absolute;left:50%;top:50%;width:40%;transform:translate(-50%,-50%) scale(.5);border-radius:14px;background:#14161b;border:2px solid var(--pt);box-shadow:0 24px 60px -12px rgba(0,0,0,.7);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:26px 0;opacity:0;z-index:5;animation:zoomPop 9s ease-in-out infinite;}
+.ppm3 .zoom .tag{font-size:12px;color:var(--pt);font-weight:800;letter-spacing:.04em;}
+@keyframes slotFill{to{opacity:1;}}
+@keyframes zoomPop{0%,40%{opacity:0;transform:translate(-50%,-50%) scale(.5);}50%,86%{opacity:1;transform:translate(-50%,-50%) scale(1);}100%{opacity:0;transform:translate(-50%,-50%) scale(.5);}}
+
+/* track dual */
+.ppm3 .stage-track{background:#07080b;}
+.ppm3 .vtop{position:absolute;left:0;right:0;top:0;height:58%;overflow:hidden;background:#0b1020;border-bottom:2px solid rgba(255,255,255,.09);}
+.ppm3 .filmbg{position:absolute;inset:0;background:linear-gradient(120deg,#3b2a6b,#1b3a6b,#2b6b5b,#6b2b4b,#3b2a6b);background-size:320% 320%;animation:filmshift 13s ease infinite;opacity:.6;}
+@keyframes filmshift{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+.ppm3 .blob{position:absolute;width:26%;height:60%;border-radius:50%;filter:blur(22px);opacity:.45;animation:blobm 9s ease-in-out infinite;}
+.ppm3 .blob.b1{background:#FF6B4A;left:8%;top:12%;}
+.ppm3 .blob.b2{background:#6BA8FF;left:58%;top:-6%;animation-delay:2.4s;}
+.ppm3 .blob.b3{background:#4ED6B8;left:36%;top:34%;animation-delay:4.6s;}
+@keyframes blobm{0%,100%{transform:translate(0,0);}50%{transform:translate(26px,-14px);}}
+.ppm3 .brand{position:absolute;left:6%;top:16%;color:#fff;font-weight:800;font-size:15px;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.5);}
+.ppm3 .eq{position:absolute;right:6%;top:20%;display:flex;gap:4px;align-items:flex-end;height:30px;}
+.ppm3 .eq i{width:4px;background:rgba(255,255,255,.8);border-radius:2px;height:8px;animation:eq 1s ease-in-out infinite;}
+.ppm3 .eq i:nth-child(2){animation-delay:.15s;} .ppm3 .eq i:nth-child(3){animation-delay:.3s;}
+.ppm3 .eq i:nth-child(4){animation-delay:.45s;} .ppm3 .eq i:nth-child(5){animation-delay:.6s;} .ppm3 .eq i:nth-child(6){animation-delay:.75s;}
+@keyframes eq{0%,100%{height:7px;}50%{height:26px;}}
+.ppm3 .tl{position:absolute;left:6%;right:6%;bottom:16%;height:2px;background:rgba(255,255,255,.25);}
+.ppm3 .tl i{position:absolute;top:-3px;width:8px;height:8px;border-radius:50%;background:var(--pt);box-shadow:0 0 10px rgba(255,90,60,.9);}
+.ppm3 .tl .yr{position:absolute;bottom:8px;font-size:9.5px;color:rgba(255,255,255,.6);transform:translateX(-50%);}
+.ppm3 .vbot{position:absolute;left:0;right:0;bottom:0;height:42%;overflow:hidden;background:#0a0c10;}
+.ppm3 .vbot .lbl{position:absolute;left:2.5%;top:50%;transform:translateY(-50%);font-size:9.5px;color:rgba(255,90,60,.85);font-weight:700;z-index:2;background:#0a0c10;padding-right:6px;}
+.ppm3 .tickwrap{position:absolute;top:50%;left:0;display:flex;width:max-content;transform:translateY(-50%);animation:tickmove 30s linear infinite;}
+.ppm3 .tickset{display:flex;align-items:center;gap:42px;padding-right:42px;}
+.ppm3 .tickset .ts{display:flex;align-items:center;}
+@keyframes tickmove{from{transform:translate(0,-50%);}to{transform:translate(-50%,-50%);}}
+
+@media(max-width:880px){
+ .ppm3 .strip,.ppm3 .steps{grid-template-columns:repeat(2,1fr);}
+ .ppm3 .steps.s3{grid-template-columns:repeat(3,1fr);}
+ .ppm3 .bcards,.ppm3 .cases,.ppm3 .cases.c2{grid-template-columns:1fr;}
+ .ppm3 .xgrid,.ppm3 .flist{grid-template-columns:1fr;}
+ .ppm3 .snav{display:none;}
+}
+@media(max-width:520px){ .ppm3 .strip,.ppm3 .steps,.ppm3 .steps.s3{grid-template-columns:1fr;} }
+@media(prefers-reduced-motion:reduce){
+ .ppm3 .bub,.ppm3 .fsig,.ppm3 .dsig,.ppm3 .slot,.ppm3 .zoom,.ppm3 .filmbg,.ppm3 .blob,.ppm3 .eq i,.ppm3 .tickwrap{animation:none!important;}
+ .ppm3 .bub{position:static;opacity:1;display:inline-flex;margin:6px;}
+ .ppm3 .fsig{position:static;opacity:1;transform:none;display:inline-block;margin:0 14px;}
+ .ppm3 .slot,.ppm3 .zoom{opacity:1;} .ppm3 .zoom{transform:translate(-50%,-50%) scale(.9);}
+ .ppm3 .tickwrap{transform:translateY(-50%);}
+}
+</style>
+<div class="ppm3">
+<div class="crumb"><div class="in"><a href="/if">이프 시리즈</a><span class="sep">/</span><a href="/if/if-c">이프C</a><span class="sep">/</span><a href="/if/content/digital-guestbook">디지털 방명록 &amp; 서명 퍼포먼스</a><span class="sep">/</span><span class="cur">5×3 그리드 + 포토존</span></div></div>
+<section class="hero"><div class="wrap"><span class="kick">연출 콘셉트 · 5×3 그리드 + 포토존</span><h1>크고 또렷한 15개 서명,<br>그리고 포토존</h1><p class="sub">한 화면에 15명의 서명을 5×3 그리드로 크고 또렷하게 송출하고, 저장된 서명을 터치하면 가운데로 크게 확대되어 포토존으로도 쓰입니다.</p>
+<div class="cta"><a class="btn btn-pt" href="https://29d88.channel.io/workflows/95856">렌탈·구매 문의 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-out" href="https://smore.im/form/n13gfnjr0b">견적 문의</a></div>
+<div class="heroviz"><div class="stage stage-grid"><div class="gwrap"><div class="slot" style="animation-delay:0.00s"><span class="hw" style="font-size:22px;color:#FF6B4A;transform:rotate(-7deg)">김민준</span></div><div class="slot" style="animation-delay:0.25s"><span class="hw" style="font-size:22px;color:#FFC24B;transform:rotate(-3deg)">이서연</span></div><div class="slot" style="animation-delay:0.50s"><svg class="scrib" viewBox="0 0 74 26" style="width:35px;height:13px;color:#4ED6B8;transform:rotate(2deg)"><path d="M6 16 C12 4,18 22,26 12 S40 4,46 18 60 20,68 8"/></svg></div><div class="slot" style="animation-delay:0.75s"><span class="hw" style="font-size:22px;color:#6BA8FF;transform:rotate(6deg)">최지우</span></div><div class="slot" style="animation-delay:1.00s"><span class="hw hw-en" style="font-size:20px;color:#FF83C0;transform:rotate(-4deg)">David</span></div><div class="slot" style="animation-delay:1.25s"><span class="hw" style="font-size:22px;color:#C08BFF;transform:rotate(3deg)">강서율</span></div><div class="slot" style="animation-delay:1.50s"><span class="hw" style="font-size:22px;color:#8CE06B;transform:rotate(-2deg)">윤예은</span></div><div class="slot" style="animation-delay:1.75s"><svg class="scrib" viewBox="0 0 74 26" style="width:35px;height:13px;color:#FF9F63;transform:rotate(5deg)"><path d="M4 14 q8 -10 14 0 t12 2 q6 -12 12 -2 t14 0"/></svg></div><div class="slot" style="animation-delay:2.00s"><span class="hw" style="font-size:22px;color:#FF6B4A;transform:rotate(-7deg)">한지호</span></div><div class="slot" style="animation-delay:2.25s"><span class="hw" style="font-size:22px;color:#FFC24B;transform:rotate(-3deg)">오유나</span></div><div class="slot" style="animation-delay:2.50s"><span class="hw" style="font-size:22px;color:#4ED6B8;transform:rotate(2deg)">서지후</span></div><div class="slot" style="animation-delay:2.75s"><svg class="scrib" viewBox="0 0 74 26" style="width:35px;height:13px;color:#6BA8FF;transform:rotate(6deg)"><path d="M5 15 C11 5,17 20,24 11 S37 6,44 17 58 19,69 12"/></svg></div><div class="slot" style="animation-delay:3.00s"><span class="hw" style="font-size:22px;color:#FF83C0;transform:rotate(-4deg)">조민서</span></div><div class="slot" style="animation-delay:3.25s"><span class="hw hw-en" style="font-size:20px;color:#C08BFF;transform:rotate(3deg)">Yuna</span></div><div class="slot" style="animation-delay:3.50s"><span class="hw" style="font-size:22px;color:#8CE06B;transform:rotate(-2deg)">남주원</span></div></div><div class="zoom"><span class="hw" style="font-size:51px;color:#6BA8FF;transform:rotate(6deg)">최지우</span><span class="tag">📸 터치 확대 · 포토존</span></div></div></div><div class="strip"><div class="s"><div class="v">15슬롯</div><div class="l">5×3 그리드</div></div><div class="s"><div class="v">터치 확대</div><div class="l">포토존</div></div><div class="s"><div class="v">2대 배치</div><div class="l">멀티터치</div></div><div class="s"><div class="v">오프라인 LAN</div><div class="l">현장 구동</div></div></div></div></section>
+<section class="sec"><div class="wrap"><div class="head"><span class="kick">어떤 연출인가요</span><h2>5×3 그리드 + 포토존</h2></div><p class="intro">한 화면에 15명의 서명을 5×3 그리드로 나란히 모아 보여주는 송출 콘셉트입니다. 작은 썸네일로 흩뿌리는 방식이 아니라, 각 서명을 크고 뚜렷한 슬롯에 담아 개별 서명이 묻히지 않고 또렷하게 읽히도록 구성했습니다.</p>
+<div class="head" style="margin:56px auto 0;"><span class="kick">작동 방식</span><h2>이렇게 움직입니다</h2></div><div class="steps"><div class="step"><div class="no">STEP 01</div><h3>채움</h3><p>서명하면 LED Wall의 빈 슬롯에 순차로 채워집니다.</p></div><div class="step"><div class="no">STEP 02</div><h3>누적</h3><p>15개 슬롯이 차면 페이드 전환으로 다음 페이지로 넘어가며 계속 누적됩니다.</p></div><div class="step"><div class="no">STEP 03</div><h3>포토존</h3><p>저장된 서명을 터치하면 가운데로 크게 확대 — 자기 서명 앞에서 사진을 찍는 포토존이 됩니다.</p></div><div class="step"><div class="no">STEP 04</div><h3>동시 서명</h3><p>이프-C 2대를 좌우로 배치하면 멀티터치로 동시에 서명할 수 있습니다.</p></div></div></div></section>
+<section class="sec" style="padding-top:0;"><div class="wrap"><div class="head"><span class="kick">이 연출의 장점</span><h2>왜 이 콘셉트인가</h2></div><div class="bcards"><div class="bcard"><div class="ic">🔠</div><h3>크고 또렷한 서명</h3><p>15개 슬롯 레이아웃이라 개별 서명이 묻히지 않고 선명하게 보입니다.</p></div><div class="bcard"><div class="ic">📸</div><h3>포토존까지 겸함</h3><p>터치 확대로 별도 포토존 장치 없이 방명록 자체가 포토 스팟이 됩니다.</p></div><div class="bcard"><div class="ic">🔌</div><h3>오프라인 LAN 구동</h3><p>현장 네트워크 상황의 영향을 받지 않고 안정적으로 운용됩니다.</p></div></div></div></section>
+
+<section class="sec custom-sec"><div class="wrap"><div class="head"><span class="kick">커스터마이징</span><h2>행사에 맞춰 유연하게 커스텀</h2><p class="lead">고정된 틀이 아니라, 배경·디자인·규격을 행사에 맞게 조정해 드립니다.</p></div><div class="bcards"><div class="bcard"><div class="ic">🖼️</div><h3>배경·슬롯 디자인</h3><p>배경과 슬롯 프레임을 행사 톤·브랜드 컬러로 맞춥니다.</p></div><div class="bcard"><div class="ic">🧩</div><h3>슬롯 수·레이아웃</h3><p>5×3 외 다른 그리드 구성과 페이지 전환 방식도 설계합니다.</p></div><div class="bcard"><div class="ic">📸</div><h3>포토존 연출</h3><p>확대 스타일·문구·프레임을 브랜드에 맞게 커스텀합니다.</p></div></div></div></section>
+<section class="sec" style="padding-top:0;"><div class="wrap"><div class="head"><span class="kick">납품 사례</span><h2>이 연출로 진행된 행사</h2></div><div class="sldr"><div class="snav sprev" aria-label="이전">‹</div><div class="slider"><a class="case" href="https://blog.paintpam.com/72232" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-09-29T04:37:08.624Z-7b85ed92-26dc-4735-9d85-2a955b7c2c12" alt="2025 국군모범용사 격려행사" loading="lazy"></div><div class="cb">2025 국군모범용사 격려행사<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/46882" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-03-12T05:28:12.255Z-852ef8c6-ea43-4879-91e1-379780255393" alt="2024 원자력 기술 및 채용 박람회" loading="lazy"></div><div class="cb">2024 원자력 기술 및 채용 박람회<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/40713" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-01-20T06:12:39.801Z-5efc8521-11dc-4c7a-ae17-a15a9241f7dd" alt="BYD 용산점 Grand Open" loading="lazy"></div><div class="cb">BYD 용산점 Grand Open<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/19232" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2024-04-23T05:24:22.351Z-b12afe28-1efa-4221-ba55-6287de1c3a26" alt="200명 삼성전자 임원 투명 방명록" loading="lazy"></div><div class="cb">200명 삼성전자 임원 투명 방명록<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/44110" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-02-18T04:59:14.098Z-ee6fc50c-ea70-48eb-a0d6-2b31975d9604" alt="KT Partner’s Day" loading="lazy"></div><div class="cb">KT Partner’s Day<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/48189" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-03-20T02:06:10.417Z-f9a4ef92-943d-479f-91fd-a51d8236ea04" alt="대전 궁동 스타트업 파크 개소식" loading="lazy"></div><div class="cb">대전 궁동 스타트업 파크 개소식<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/19211" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2024-04-23T04:19:26.975Z-5ebe1746-d2f5-4cdf-a960-b86324fc2492" alt="국민안전의 날 기념식" loading="lazy"></div><div class="cb">국민안전의 날 기념식<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/33005" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2024-10-22T23:39:23.123Z-9424501c-efba-47ba-aadd-bc1eb1044d65" alt="서초 스마트 유스 페스티벌" loading="lazy"></div><div class="cb">서초 스마트 유스 페스티벌<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/39868" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-01-07T05:16:30.941Z-ee70f3eb-f1fb-47de-9e40-aed92f95dba6" alt="2024 금융권 함께하는 아름다운 나눔 행사" loading="lazy"></div><div class="cb">2024 금융권 함께하는 아름다운 나눔 행사<span class="cl">블로그 사례 보기 &rarr;</span></div></a><a class="case" href="https://blog.paintpam.com/40660" target="_blank" rel="noopener"><div class="th"><img src="https://source.inblog.dev/featured_image/2025-01-20T01:25:38.525Z-28239a19-17a0-44d2-814e-560618297426" alt="타이어모어 가맹 사업 출범식" loading="lazy"></div><div class="cb">타이어모어 가맹 사업 출범식<span class="cl">블로그 사례 보기 &rarr;</span></div></a></div><div class="snav snext" aria-label="다음">›</div></div><div class="shint">← 좌우로 넘겨보세요 · 총 10개 사례 →</div></div></section>
+<section class="sec" style="padding-top:0;"><div class="wrap"><div class="head"><span class="kick">다른 서명 퍼포먼스</span><h2>행사에 맞는 다른 연출도 있어요</h2><p class="lead">같은 서명, 다른 무대 — 공간·LED 형태·행사 성격에 맞춰 고릅니다.</p></div><div class="xgrid"><a class="xcard" href="/if/content/digital-guestbook/bubble"><span class="em">💬</span><div class="xt"><h3>말풍선 서명</h3><p>각 서명이 말풍선에 담겨 화면 아래에서 위 끝까지 천천히 떠오르는 연출.</p></div></a><a class="xcard" href="/if/content/digital-guestbook/floar"><span class="em">🎞️</span><div class="xt"><h3>Floar · 초장축 LED</h3><p>가로로 길쭉한 초장축 LED(예: 4,680×192px 리본형)에 맞춘 서명 흘림 연출.</p></div></a><a class="xcard" href="/if/content/digital-guestbook/floor"><span class="em">🌊</span><div class="xt"><h3>Floor · 떠다니는 서명</h3><p>고정 슬롯 없이 서명이 대형 화면 곳곳을 자유롭게 떠다니는 연출.</p></div></a><a class="xcard" href="/if/content/digital-guestbook/track"><span class="em">🛤️</span><div class="xt"><h3>영상 + 서명 Track</h3><p>LED 한 화면을 상단=브랜드 영상 + 하단=서명 티커로 분할 송출.</p></div></a></div><div class="backrow"><a href="/if/content/digital-guestbook">← 디지털 방명록 개요로</a><a href="/if/if-c" style="margin-left:22px;">이프C 자세히 보기 →</a></div></div></section>
+<section class="sec" style="padding-top:0;"><div class="wrap"><div class="cta-band"><span class="kick">우리 행사에도 어울릴까?</span><h2 style="margin-top:16px;">준비하는 행사에 맞춰<br>서명 연출을 골라드립니다</h2><p class="lead" style="max-width:560px;margin:14px auto 0;">공간·LED 사이즈·행사 성격을 알려주시면 어울리는 콘셉트를 함께 골라보고, 필요하면 배경·연출을 맞춰갑니다.</p><div class="cta"><a class="btn btn-pt" href="https://29d88.channel.io/workflows/95856">렌탈·구매 문의 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-out" href="https://smore.im/form/n13gfnjr0b">견적 문의</a></div></div></div></section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"5×3 그리드 + 포토존 (디지털 방명록 서명 퍼포먼스)","brand":{"@type":"Brand","name":"페인트팜"},"category":"인터랙티브 서명 콘텐츠","description":"한 화면에 15명의 서명을 5×3 그리드로 크고 또렷하게 송출하고, 저장된 서명을 터치하면 가운데로 크게 확대되어 포토존으로도 쓰입니다. 이프C 투명 키오스크에서 구동되며 LED Wall·대형 스크린으로 실시간 송출됩니다."}</script>
+<script>(function(){document.querySelectorAll(".ppm3 .sldr").forEach(function(s){var w=s.querySelector(".slider"),p=s.querySelector(".sprev"),n=s.querySelector(".snext");if(p)p.addEventListener("click",function(){w.scrollBy({left:-330,behavior:"smooth"});});if(n)n.addEventListener("click",function(){w.scrollBy({left:330,behavior:"smooth"});});});})();</script>
+</div>
