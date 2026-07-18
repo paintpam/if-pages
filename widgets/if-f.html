@@ -1,0 +1,473 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>.ifpg{box-sizing:border-box}
+:root{
+  --bg:#fafdf8;
+  --ink:#0d150e;
+  --dim:#5c6a5e;
+  --green:#0bab52;
+  --green-deep:#067a38;
+  --lime:#c9f24a;
+  --mint:#e9f7ec;
+  --line:rgba(13,21,14,.1);
+}.ifpg *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}.ifpg{
+  font-family:"Pretendard Variable",Pretendard,-apple-system,"Malgun Gothic",sans-serif;
+  background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}.ifpg ::selection{background:var(--lime);color:var(--ink)}.ifpg img{max-width:100%}.ifpg /* ---------- nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:16px clamp(20px,5vw,64px);
+  background:rgba(250,253,248,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;transition:border-color .3s;
+}.ifpg nav.scrolled{border-color:var(--line)}.ifpg .nav-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.ifpg .logo{display:inline-flex;align-items:center;gap:12px;text-decoration:none}.ifpg .logo img{height:24px;width:auto;display:block}.ifpg .logo span{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--green-deep);border-left:2px solid var(--green);padding-left:12px}.ifpg .nav-links{display:flex;gap:26px;align-items:center}.ifpg .nav-links a{color:var(--ink);text-decoration:none;font-size:14.5px;font-weight:700;transition:color .2s}.ifpg .nav-links a:hover{color:var(--green)}.ifpg .nav-cta{
+  padding:10px 24px;border-radius:99px;background:var(--green);color:#fff!important;font-weight:800!important;
+  transition:all .2s;
+}.ifpg .nav-cta:hover{background:var(--green-deep)}@media(max-width:820px){.ifpg .nav-links a:not(.nav-cta){display:none}}.ifpg /* ---------- hero ---------- */
+.hero{
+  min-height:100svh;position:relative;
+  display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(24px,4vw,60px);
+  max-width:1320px;margin:0 auto;
+  padding:120px clamp(20px,5vw,64px) 80px;
+}.ifpg .hero-copy{position:relative;z-index:2}.ifpg .kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--ink);color:var(--lime);border-radius:99px;
+  padding:9px 20px;font-size:13.5px;font-weight:800;letter-spacing:.04em;margin-bottom:28px;
+}.ifpg .hero h1{
+  font-size:clamp(42px,5.8vw,82px);font-weight:900;line-height:1.1;letter-spacing:-.03em;
+  word-break:keep-all;margin-bottom:26px;
+}.ifpg .hero h1 em{font-style:normal;color:var(--green)}.ifpg .hero h1 .hl{
+  background:linear-gradient(transparent 62%,var(--lime) 62%);
+}.ifpg .hero p{font-size:clamp(15px,1.45vw,18.5px);line-height:1.8;color:var(--dim);max-width:480px;margin-bottom:38px;word-break:keep-all}.ifpg .hero p b{color:var(--ink)}.ifpg .hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:52px}.ifpg .btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:17px 36px;border-radius:99px;font-size:16px;font-weight:800;text-decoration:none;
+  transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;
+}.ifpg .btn-green{background:var(--green);color:#fff;box-shadow:0 10px 30px rgba(11,171,82,.3)}.ifpg .btn-green:hover{transform:translateY(-3px);background:var(--green-deep);box-shadow:0 16px 40px rgba(11,171,82,.4)}.ifpg .btn-dark{background:transparent;color:var(--ink);border:2px solid var(--ink)}.ifpg .btn-dark:hover{background:var(--ink);color:#fff}.ifpg .hero-stats{display:flex;gap:clamp(24px,3.5vw,52px);flex-wrap:wrap}.ifpg .hstat .n{font-size:clamp(28px,3vw,42px);font-weight:900;letter-spacing:-.02em;color:var(--green)}.ifpg .hstat .l{margin-top:5px;font-size:13px;font-weight:600;color:var(--dim)}.ifpg .hero-visual{position:relative}.ifpg .hero-visual .main{
+  border-radius:28px;overflow:hidden;position:relative;
+  box-shadow:0 30px 80px rgba(13,21,14,.25);
+}.ifpg .hero-visual .main img{width:100%;aspect-ratio:4/4.6;object-fit:cover;display:block}.ifpg .hero-visual .main::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,20,10,.45),transparent 45%)}.ifpg .hero-visual .cap{
+  position:absolute;bottom:20px;left:20px;right:20px;z-index:2;color:#fff;
+  font-size:13.5px;font-weight:700;letter-spacing:.02em;
+}.ifpg .hero-visual .float{
+  position:absolute;top:-18px;right:-14px;z-index:3;
+  background:var(--lime);color:var(--ink);border-radius:18px;
+  padding:14px 20px;font-weight:900;font-size:15px;transform:rotate(3deg);
+  box-shadow:0 14px 34px rgba(13,21,14,.2);
+}.ifpg .hero::before{
+  content:"";position:absolute;top:8%;right:-6%;width:44vw;height:44vw;max-width:640px;max-height:640px;
+  background:radial-gradient(circle,rgba(201,242,74,.35),transparent 65%);
+  z-index:0;pointer-events:none;
+}@media(max-width:900px){.ifpg .hero{grid-template-columns:1fr;text-align:center;padding-top:130px}.ifpg .hero p{margin:0 auto 36px}.ifpg .hero-btns, .ifpg .hero-stats{justify-content:center}.ifpg .hero-visual{max-width:460px;margin:0 auto}
+}.ifpg /* ---------- marquee ---------- */
+.strip{background:var(--ink);overflow:hidden;padding:16px 0}.ifpg .strip-track{display:flex;gap:56px;width:max-content;animation:marq 26s linear infinite}.ifpg .strip span{font-size:16px;font-weight:800;color:#fff;white-space:nowrap;display:flex;align-items:center}.ifpg .strip span::after{content:"●";color:var(--lime);font-size:9px;margin-left:48px}@keyframes marq{to{transform:translateX(-50%)}}.ifpg /* ---------- common ---------- */
+section{padding:clamp(84px,10vw,140px) clamp(20px,5vw,64px);position:relative}.ifpg .wrap{max-width:1180px;margin:0 auto}.ifpg .sec-head{margin-bottom:clamp(44px,6vw,72px)}.ifpg .sec-head .tag{
+  display:inline-block;background:var(--mint);color:var(--green-deep);border-radius:99px;
+  padding:8px 18px;font-size:13px;font-weight:800;letter-spacing:.08em;margin-bottom:20px;
+}.ifpg .sec-head h2{font-size:clamp(30px,4vw,52px);font-weight:900;line-height:1.2;letter-spacing:-.02em;word-break:keep-all}.ifpg .sec-head h2 em{font-style:normal;color:var(--green)}.ifpg .sec-head p{margin-top:16px;color:var(--dim);font-size:clamp(14px,1.35vw,17px);line-height:1.8;max-width:640px;word-break:keep-all}.ifpg .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.ifpg .reveal.on{opacity:1;transform:none}.ifpg /* ---------- fun (why) ---------- */
+.fun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.ifpg .fun-card{
+  border-radius:26px;padding:38px 32px;position:relative;overflow:hidden;
+  transition:transform .25s;
+}.ifpg .fun-card:hover{transform:translateY(-6px)}.ifpg .fun-card.g1{background:var(--ink);color:#fff}.ifpg .fun-card.g2{background:var(--green);color:#fff}.ifpg .fun-card.g3{background:var(--lime);color:var(--ink)}.ifpg .fun-card .big{font-size:44px;margin-bottom:20px;display:block}.ifpg .fun-card h3{font-size:22px;font-weight:900;margin-bottom:12px;word-break:keep-all;letter-spacing:-.01em}.ifpg .fun-card p{font-size:14.5px;line-height:1.75;word-break:keep-all;opacity:.85}@media(max-width:880px){.ifpg .fun-grid{grid-template-columns:1fr}}.ifpg /* ---------- contents ---------- */
+#contents{background:var(--mint)}.ifpg .ct-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:26px}.ifpg .ct{
+  background:#fff;border-radius:22px;padding:30px 26px;
+  box-shadow:0 6px 24px rgba(13,21,14,.06);transition:transform .25s,box-shadow .25s;
+}.ifpg .ct:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(13,21,14,.12)}.ifpg .ct .ico{font-size:34px;margin-bottom:16px}.ifpg .ct h3{font-size:17.5px;font-weight:800;margin-bottom:9px;word-break:keep-all}.ifpg .ct p{font-size:13.5px;line-height:1.65;color:var(--dim);word-break:keep-all}@media(max-width:960px){.ifpg .ct-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.ifpg .ct-grid{grid-template-columns:1fr}}.ifpg .custom-band{
+  border-radius:26px;background:var(--ink);color:#fff;
+  padding:clamp(30px,4vw,50px);display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;
+}.ifpg .custom-band h3{font-size:clamp(22px,2.6vw,32px);font-weight:900;line-height:1.35;margin-bottom:14px;word-break:keep-all}.ifpg .custom-band h3 em{font-style:normal;color:var(--lime)}.ifpg .custom-band p{font-size:14.5px;line-height:1.8;opacity:.8;word-break:keep-all}.ifpg .custom-band .cta{text-align:right}@media(max-width:820px){.ifpg .custom-band{grid-template-columns:1fr}.ifpg .custom-band .cta{text-align:left}}.ifpg /* ---------- how ---------- */
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.ifpg .how{
+  border:2px solid var(--ink);border-radius:22px;padding:30px 26px;background:#fff;
+  transition:transform .25s,box-shadow .25s;
+}.ifpg .how:hover{transform:translateY(-5px);box-shadow:0 12px 0 rgba(13,21,14,.08)}.ifpg .how .no{
+  width:46px;height:46px;border-radius:14px;background:var(--green);color:#fff;
+  display:grid;place-items:center;font-weight:900;font-size:19px;margin-bottom:18px;
+}.ifpg .how h3{font-size:17px;font-weight:800;margin-bottom:9px;word-break:keep-all}.ifpg .how p{font-size:13.5px;line-height:1.7;color:var(--dim);word-break:keep-all}@media(max-width:960px){.ifpg .how-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.ifpg .how-grid{grid-template-columns:1fr}}.ifpg /* ---------- cases ---------- */
+#cases{background:#0d150e}.ifpg #cases .sec-head h2{color:#fff}.ifpg #cases .sec-head p{color:rgba(255,255,255,.65)}.ifpg #cases .sec-head .tag{background:rgba(201,242,74,.15);color:var(--lime)}.ifpg .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.ifpg .case.wide{grid-column:1/-1;aspect-ratio:16/6.5}@media(max-width:820px){.ifpg .case.wide{aspect-ratio:16/10}}.ifpg .case{
+  border-radius:26px;overflow:hidden;position:relative;aspect-ratio:16/10;
+  display:block;text-decoration:none;color:#fff;
+}.ifpg .case img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}.ifpg .case:hover img{transform:scale(1.05)}.ifpg .case .ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,12,7,.92) 0%,rgba(5,12,7,.2) 50%,transparent 72%)}.ifpg .case .tx{position:absolute;left:0;right:0;bottom:0;padding:26px}.ifpg .case .loc{
+  display:inline-block;background:var(--lime);color:var(--ink);border-radius:99px;
+  padding:5px 13px;font-size:12px;font-weight:900;margin-bottom:12px;
+}.ifpg .case h3{font-size:clamp(18px,2vw,24px);font-weight:900;margin-bottom:7px;word-break:keep-all}.ifpg .case p{font-size:13.5px;line-height:1.6;color:rgba(255,255,255,.75);word-break:keep-all}.ifpg .case .go{display:inline-block;margin-top:10px;font-size:13px;font-weight:800;color:var(--lime)}@media(max-width:820px){.ifpg .case-grid{grid-template-columns:1fr}}.ifpg /* ---------- spec ---------- */
+.spec-table{border:2px solid var(--ink);border-radius:24px;overflow:hidden;max-width:900px;margin:0 auto;background:#fff}.ifpg .spec-table table{width:100%;border-collapse:collapse}.ifpg .spec-table th, .ifpg .spec-table td{
+  padding:17px 28px;text-align:left;font-size:14.5px;line-height:1.7;word-break:keep-all;
+  border-bottom:1px solid var(--line);vertical-align:top;
+}.ifpg .spec-table tr:last-child th, .ifpg .spec-table tr:last-child td{border-bottom:none}.ifpg .spec-table th{width:180px;color:var(--green-deep);font-weight:800;background:var(--mint)}.ifpg .spec-table td{color:var(--dim)}.ifpg .spec-table td b{color:var(--ink)}@media(max-width:640px){.ifpg .spec-table th{width:120px}.ifpg .spec-table th, .ifpg .spec-table td{padding:14px 18px}}.ifpg /* ---------- faq ---------- */
+#faq{background:var(--mint)}.ifpg .faq-list{max-width:840px;margin:0 auto;display:flex;flex-direction:column;gap:14px}.ifpg .faq-item{border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 4px 18px rgba(13,21,14,.06)}.ifpg .faq-item summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;
+  padding:22px 26px;font-size:clamp(15.5px,1.5vw,17.5px);font-weight:800;word-break:keep-all;user-select:none;
+}.ifpg .faq-item summary::-webkit-details-marker{display:none}.ifpg .faq-item summary .q{
+  flex:none;width:30px;height:30px;border-radius:10px;background:var(--green);color:#fff;
+  display:grid;place-items:center;font-size:14px;font-weight:900;
+}.ifpg .faq-item summary .arrow{margin-left:auto;flex:none;font-size:13px;color:var(--dim);transition:transform .3s}.ifpg .faq-item[open] summary .arrow{transform:rotate(180deg);color:var(--green)}.ifpg .faq-item .a{padding:0 26px 24px 70px;font-size:14.5px;line-height:1.85;color:var(--dim);word-break:keep-all}.ifpg .faq-item .a b{color:var(--ink)}.ifpg .faq-item .a .hl{color:var(--green-deep);font-weight:700}@media(max-width:600px){.ifpg .faq-item .a{padding-left:26px}}.ifpg /* ---------- contact ---------- */
+#contact{background:var(--ink);color:#fff;text-align:center}.ifpg #contact h2{font-size:clamp(30px,4.4vw,56px);font-weight:900;line-height:1.25;margin-bottom:20px;word-break:keep-all}.ifpg #contact h2 em{font-style:normal;color:var(--lime)}.ifpg #contact .sub{color:rgba(255,255,255,.7);font-size:clamp(14px,1.4vw,17px);line-height:1.8;max-width:560px;margin:0 auto 42px;word-break:keep-all}.ifpg #contact .btn-green{box-shadow:0 10px 30px rgba(11,171,82,.4)}.ifpg #contact .btn-dark{border-color:rgba(255,255,255,.4);color:#fff}.ifpg #contact .btn-dark:hover{background:#fff;color:var(--ink)}.ifpg .contact-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}.ifpg .contact-meta{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;color:rgba(255,255,255,.55);font-size:14px}.ifpg .contact-meta a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}.ifpg .contact-meta a:hover{color:var(--lime);border-color:var(--lime)}.ifpg /* ---------- series ---------- */
+#series{background:var(--bg)}.ifpg .series-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:980px;margin:0 auto}.ifpg .scard{
+  display:block;text-decoration:none;color:var(--ink);border-radius:26px;overflow:hidden;
+  background:#fff;box-shadow:0 8px 30px rgba(13,21,14,.08);transition:transform .25s,box-shadow .25s;
+}.ifpg .scard:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(13,21,14,.14)}.ifpg .scard .ph{overflow:hidden}.ifpg .scard .ph img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;transition:transform .6s}.ifpg .scard:hover .ph img{transform:scale(1.04)}.ifpg .scard .tx{padding:24px 28px 28px}.ifpg .scard .tag2{font-size:12px;font-weight:900;letter-spacing:.1em;color:var(--green-deep);margin-bottom:10px}.ifpg .scard h3{font-size:20px;font-weight:900;margin-bottom:7px}.ifpg .scard p{font-size:14px;line-height:1.7;color:var(--dim);word-break:keep-all}.ifpg .scard .go{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:800;color:var(--green)}@media(max-width:760px){.ifpg .series-grid{grid-template-columns:1fr}}.ifpg footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.12);padding:32px clamp(20px,5vw,64px);color:rgba(255,255,255,.55);font-size:13px}.ifpg .footer-inner{max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.ifpg footer a{color:rgba(255,255,255,.55);text-decoration:none;margin-left:18px}.ifpg footer a:hover{color:var(--lime)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "이프F — 바닥 인터랙티브", "description": "발걸음마다 꽃이 피고 물결이 번지는 이동형 바닥 인터랙티브 키오스크 이프F. 쇼핑몰·병원·학교·축제가 선택한 바닥 체험, 행사 맞춤 커스텀 콘텐츠까지.", "brand": {"@type": "Brand", "name": "PAINTPAM"}, "manufacturer": {"@type": "Organization", "name": "페인트팜", "url": "https://paintpam.com"}, "url": "https://paintpam.com/if-f", "image": ["https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/logo_black.png"], "category": "멀티미디어학습장치 · 바닥 인터랙티브", "additionalProperty": [{"@type": "PropertyValue", "name": "제품군", "value": "이동형 바닥 인터랙티브 키오스크"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "정말 전원만 있으면 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 이프(이동형 프로젝션) 시리즈는 이동·설치가 쉽게 설계된 일체형 장비라 콘센트에 연결하면 켜집니다.\n          도착부터 테스트까지 평균 60분, 바닥 공사·타공이 전혀 없습니다.\n          인터넷이 필요한 콘텐츠는 유선(이더넷) 연결이 가장 안정적입니다."}}, {"@type": "Question", "name": "콘텐츠를 우리 행사에 맞게 바꿀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본 콘텐츠(꽃길·구름길·연못·퀴즈/게임)는 추가 비용 없이 선택할 수 있고,\n          행사 로고·캐릭터·테마를 입힌 커스텀 콘텐츠는 별도 협의로 제작해 드립니다.\n          퀴즈 콘텐츠는 문제를 직접 바꿔 낼 수도 있습니다."}}, {"@type": "Question", "name": "야외에서도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 유성 재즈&amp;맥주 페스타처럼 야외 행사 운영 사례가 있습니다.\n          상부 투사 방식이라 해가 진 야간 시간대에 가장 선명하며, 야외 운영은 환경(전원·우천 대비)을 상담을 통해 함께 설계합니다."}}, {"@type": "Question", "name": "운영 인력이 함께 오나요?", "acceptedAnswer": {"@type": "Answer", "text": "조작이 간단해서, 행사 측에서 운영 인력을 배치할 수 있다면 직접 운영이 가능합니다.\n          설치 시 사용 방법을 안내해 드리며, 필요한 경우 운영 지원 구성도 협의할 수 있습니다."}}, {"@type": "Question", "name": "렌탈 말고 구매도 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "네, 둘 다 가능합니다. 단기 행사는 렌탈, 병원 대기실처럼 상시 운영은 구매를 추천드립니다.\n          학교·관공서는 나라장터 및 학교장터(S2B)를 통해 구매하실 수 있습니다."}}]}</script>
+<div class="ifpg">
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-copy">
+    <span class="kicker">🛞 굴러 들어오는 바닥 놀이터 · 이동형 프로젝션</span>
+    <h1>바닥을 <em>밟는 순간,</em><br><span class="hl">놀이가 시작됩니다</span></h1>
+    <p>
+      발걸음마다 꽃이 피고, 물결이 번지고, 퀴즈가 터집니다.
+      바퀴 달린 키오스크가 굴러 들어와 <b>평범한 바닥을 폭 2.4m의 체험존</b>으로
+      바꾸는 바닥 인터랙티브, 이프F입니다.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-green">렌탈 견적 문의</a>
+      <a href="#cases" class="btn btn-dark">체험 사례 보기</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="n">0분</div><div class="l">바닥 공사 시간</div></div>
+      <div class="hstat"><div class="n">60분</div><div class="l">도착 후 세팅 완료</div></div>
+      <div class="hstat"><div class="n">2.4m</div><div class="l">바닥 스크린 폭</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <span class="float">발로 노는 스크린! 👣</span>
+    <div class="main">
+      <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_yeogang.jpg" alt="여강중고 학술제 복도 디지털 꽃길 체험">
+      <span class="cap">실제 운영 현장 · 여강중·고 학술제 디지털 꽃길</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STRIP ============ -->
+<div class="strip">
+  <div class="strip-track" id="stripTrack">
+    <span>송도 더현대 디지털 연못</span>
+    <span>정읍아산병원 소아외래</span>
+    <span>유성 재즈&amp;맥주 페스타 야외 운영</span>
+    <span>행사 테마 커스텀 콘텐츠</span>
+    <span>전원만 연결 · 바닥 공사 없음</span>
+    <span>나라장터 등록 제품</span>
+  </div>
+</div>
+
+<!-- ============ FUN ============ -->
+<section id="fun">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">WHY 이프F</span>
+      <h2>아이는 뛰어들고,<br>어른은 <em>카메라를 꺼냅니다</em></h2>
+      <p>바닥은 모두가 지나가는 곳 — 그래서 바닥에서 벌어지는 재미는 그 어떤 화면보다 강력합니다.</p>
+    </div>
+    <div class="fun-grid">
+      <div class="fun-card g1 reveal">
+        <span class="big">👣</span>
+        <h3>재미 — 발로 노는 인터랙션</h3>
+        <p>모션센서가 발걸음을 실시간으로 읽습니다. 밟는 위치마다 꽃이 피고 물결이 번지는 반응형 콘텐츠에 아이들은 별도 안내 없이도 스스로 뛰어듭니다.</p>
+      </div>
+      <div class="fun-card g2 reveal">
+        <span class="big">🎪</span>
+        <h3>체험 — 모두의 놀이터</h3>
+        <p>쇼핑몰 키즈존, 병원 대기실, 학교 행사, 야외 축제까지. 기다림과 스쳐 지나감이 머무는 체험으로 바뀌고, 공간의 체류 시간이 달라집니다.</p>
+      </div>
+      <div class="fun-card g3 reveal">
+        <span class="big">🎨</span>
+        <h3>커스텀 — 우리 행사답게</h3>
+        <p>행사 로고, 캐릭터, 계절 테마를 입힌 맞춤 콘텐츠를 제작합니다. 같은 장비라도 콘텐츠가 바뀌면 완전히 다른 행사가 됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTENTS ============ -->
+<section id="contents">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">CONTENTS</span>
+      <h2>골라 쓰는 기본 콘텐츠,<br>입혀 쓰는 <em>커스텀</em></h2>
+      <p>자체 개발 저작권 등록 콘텐츠가 기본 제공됩니다. 행사에 맞게 고르고, 필요하면 맞춤 제작하세요.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct reveal">
+        <div class="ico">🌸</div>
+        <h3>디지털 꽃길</h3>
+        <p>발걸음마다 꽃이 피어나는 시그니처 콘텐츠. 졸업식 '꽃길만 걷자', 입학식, 축제 입구 연출의 단골입니다.</p>
+      </div>
+      <div class="ct reveal">
+        <div class="ico">☁️</div>
+        <h3>디지털 구름길</h3>
+        <p>구름 위를 걷는 몽글몽글한 바닥 연출. 포토존과 웨딩·키즈 행사에 잘 어울립니다.</p>
+      </div>
+      <div class="ct reveal">
+        <div class="ico">💧</div>
+        <h3>디지털 연못</h3>
+        <p>밟을 때마다 물결이 번지는 힐링 콘텐츠. 송도 더현대 아울렛 키즈존에서 검증된 인기 콘텐츠입니다.</p>
+      </div>
+      <div class="ct reveal">
+        <div class="ico">🧩</div>
+        <h3>트릭아트 퀴즈 · 게임</h3>
+        <p>발로 밟아 정답을 고르는 퀴즈형·게임형 콘텐츠. 문제를 바꿔 낼 수 있어 학교 수업·행사에 활용됩니다.</p>
+      </div>
+      <a class="ct reveal" href="https://www.youtube.com/shorts/F1NXEj2PU5U" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;display:block">
+        <div class="ico">🎯</div>
+        <h3>디지털 사방치기</h3>
+        <p>추억의 사방치기를 AI 바닥 게임으로. 핸드캐리 미니 버전으로 전시 부스에도 들어갑니다. <b style="color:var(--green)">쇼츠 보기 ▶</b></p>
+      </a>
+    </div>
+    <div class="custom-band reveal">
+      <div>
+        <h3>여기에 <em>우리 행사의 색</em>을 입히면?</h3>
+        <p>브랜드 로고가 바닥에 흩어지고, 캐릭터가 발을 따라다니고, 계절 테마가 깔립니다. 행사 주제에 맞춘 커스텀 콘텐츠는 별도 협의로 제작해 드립니다 — 이프F가 '우리 행사 장비'가 되는 순간입니다.<br>
+        <a href="https://www.youtube.com/watch?v=dKHsunxIl04" target="_blank" rel="noopener" style="color:var(--lime);font-weight:800;text-decoration:none">실제 맞춤제작 — 울산 울주군 'AR로 떠나는 식습관 대모험' 영상 보기 ▶</a></p>
+      </div>
+      <div class="cta"><a href="#contact" class="btn btn-green">커스텀 콘텐츠 상담 →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW ============ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">HOW IT WORKS</span>
+      <h2>굴러 들어와서,<br>60분 만에 놀이터</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how reveal">
+        <div class="no">1</div>
+        <h3>굴러서 입장</h3>
+        <p>바퀴 달린 일체형 키오스크가 현장으로 이동합니다. 손잡이가 있어 원하는 자리로 쉽게 옮기고, 스톱퍼로 고정합니다.</p>
+      </div>
+      <div class="how reveal">
+        <div class="no">2</div>
+        <h3>전원만 연결</h3>
+        <p>콘센트에 꽂고 메인 전원을 켜면 프로젝터·센서·PC가 한 번에 켜집니다. 바닥 공사가 전혀 없습니다.</p>
+      </div>
+      <div class="how reveal">
+        <div class="no">3</div>
+        <h3>바닥에 폭 2.4m 투사</h3>
+        <p>초단초점(UST) 프로젝터가 바닥에 폭 2.4m의 밝은 영상을 만듭니다. 5,000안시 Full-HD로 실내 환경에서 선명합니다.</p>
+      </div>
+      <div class="how reveal">
+        <div class="no">4</div>
+        <h3>센서가 발걸음을 읽음</h3>
+        <p>하단에 매립된 모션센서가 밟는 위치를 실시간 감지해 콘텐츠가 반응합니다. 매립형이라 충격 파손 걱정이 없습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASES ============ -->
+<section id="cases">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">REFERENCES</span>
+      <h2>이프F가 바꾼 현장들</h2>
+      <p>쇼핑몰, 병원, 학교, 야외 축제 — 바닥이 놀이터가 된 실제 운영 사례입니다.</p>
+    </div>
+    <div class="case-grid">
+      <a class="case wide reveal" href="https://blog.paintpam.com/%EB%B0%94%EB%8B%A5-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%86%A1%EB%8F%84-%EB%8D%94%ED%98%84%EB%8C%80-%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EC%95%84%EC%9A%B8%EB%A0%9B%EC%9D%98-%ED%8A%B9%EB%B3%84%ED%95%9C-%EB%94%94%EC%A7%80%ED%84%B8-%EC%97%B0%EB%AA%BB-52970" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_songdo.jpg" alt="송도 더현대 아울렛 디지털 연못" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">쇼핑몰 · 디지털 연못</span>
+          <h3>송도 더현대 아울렛 — 매장 한가운데 생긴 연못</h3>
+          <p>3일간 운영된 키즈존 디지털 연못. 밟을 때마다 물결이 번지며, 지나가던 통로가 아이들이 머무는 체험존이 되었습니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+      <a class="case reveal" href="https://blog.paintpam.com/%EB%B0%94%EB%8B%A5-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC%EB%A1%9C-%EC%A6%90%EA%B8%B0%EB%8A%94-%EC%86%90%EC%89%AC%EC%9A%B4-%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C-%EA%B2%8C%EC%9E%84-%ED%96%89%EC%82%AC%EC%99%80-%EC%B6%95%EC%A0%9C%EB%A5%BC-%EB%8D%94%EC%9A%B1-%ED%8A%B9%EB%B3%84%ED%95%98%EA%B2%8C-45837" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_game.jpg" alt="바닥 인터랙티브 디지털 게임 콘텐츠" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">행사 · 디지털 게임</span>
+          <h3>발로 뛰며 즐기는 바닥 게임</h3>
+          <p>캐릭터와 함께 달리고 피하는 게임형 콘텐츠 — 행사와 축제의 참여율을 끌어올리는 단골 콘텐츠입니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+      <a class="case reveal" href="https://blog.paintpam.com/2025-%EB%8C%80%EC%A0%84-0%EC%8B%9C-%EC%B6%95%EC%A0%9C%EC%9D%98-%EA%BF%88%EB%8F%8C%EC%9D%B4-%EC%98%A4%EB%9D%BD%EC%8B%A4%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%83%84%EC%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-66408" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_zero.jpg" alt="대전 0시 축제 꿈돌이 오락실" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">지역 축제 · 오락실</span>
+          <h3>대전 0시 축제 — 꿈돌이 오락실</h3>
+          <p>지역 스토리를 담은 게임 부스에 이프 시리즈가 투입되어, 개인·그룹 모두 참여하는 축제 명소가 되었습니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+      <a class="case reveal" href="https://blog.paintpam.com/%EB%B0%94%EB%8B%A5-%EC%9D%B8%ED%84%B0%EB%9E%99%EC%85%98-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC%EB%A1%9C-%EC%95%84%EC%9D%B4%EB%93%A4%EC%9D%98-%EA%B8%B0%EB%8B%A4%EB%A6%BC%EC%9D%84-%EB%B0%94%EA%BE%BC-%EC%A0%95%EC%9D%8D%EC%95%84%EC%82%B0%EB%B3%91%EC%9B%90-%EC%86%8C%EC%95%84%EC%99%B8%EB%9E%98%EC%84%BC%ED%84%B0-69057" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_jeongeup.jpg" alt="정읍아산병원 소아외래 바닥 인터랙션" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">병원 · 상시 운영</span>
+          <h3>정읍아산병원 — 소아외래 대기실</h3>
+          <p>진료를 기다리는 아이들의 긴장을 바닥 인터랙션이 풀어줍니다. 상시 운영 중인 현장입니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+      <a class="case reveal" href="https://blog.paintpam.com/%EB%B0%94%EB%8B%A5-%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC%EB%A1%9C-%EC%8B%9C%EC%9E%91%EB%90%98%EB%8A%94-%EC%97%AC%EA%B0%95-%EC%A4%91%EA%B3%A0-%ED%95%99%EC%88%A0%EC%A0%9C%EC%9D%98-%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%88%9C%EA%B0%84-69499" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_yeogang.jpg" alt="여강중고 학술제 복도 디지털 꽃길" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">학교 · 디지털 꽃길</span>
+          <h3>여강중·고 학술제 — 복도 디지털 꽃길</h3>
+          <p>학술제의 시작을 알린 복도 꽃길. 학생들의 발걸음마다 꽃이 피며 행사의 설렘을 더했습니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+      <a class="case reveal" href="https://blog.paintpam.com/%EB%8C%80%EC%A0%84-%EC%84%9C%EA%B5%AC%EC%B2%AD-%EC%9D%BC%EC%9E%90%EB%A6%AC-%EB%B0%95%EB%9E%8C%ED%9A%8C%EC%97%90-%EC%84%A4%EC%B9%98%EB%90%9C-%EC%A0%8A%EC%96%B4%EC%A7%84-%EB%B0%94%EB%8B%A5-%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C-%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC-55319" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_seogu.jpg" alt="대전 서구청 일자리 박람회 다이나믹 꽃길" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">관공서 · 박람회</span>
+          <h3>대전 서구청 일자리 박람회 — 환영의 꽃길</h3>
+          <p>박람회 입구에서 방문객을 맞이한 다이나믹 꽃길. '환영받는 경험'으로 행사의 첫인상을 설계했습니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+      <a class="case reveal" href="https://blog.paintpam.com/%EC%9C%A0%EC%84%B1-%EC%9E%AC%EC%A6%88%EB%A7%A5%EC%A3%BC-%ED%8E%98%EC%8A%A4%ED%83%80-%EC%9E%85%EA%B5%AC%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%EB%90%9C-%ED%8A%B9%EB%B3%84%ED%95%9C-%EA%B2%BD%ED%97%98-68533" target="_blank" rel="noopener">
+        <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_f_yuseong.jpg" alt="유성 재즈맥주 페스타 야외 바닥 인터랙션" loading="lazy">
+        <div class="ov"></div>
+        <div class="tx">
+          <span class="loc">야외 축제 · 야간</span>
+          <h3>유성 재즈&amp;맥주 페스타 — 축제 입구</h3>
+          <p>야간 야외 운영 사례. 축제 입구 바닥에서 발걸음마다 빛과 그래픽이 반응하며 첫인상을 만들었습니다.</p>
+          <span class="go">사례 보기 →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPEC ============ -->
+<section id="spec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">SPECIFICATION</span>
+      <h2>제품 사양</h2>
+      <p>조달청 나라장터에 등록된 멀티미디어학습장치입니다. 규격명 PP-SOFK · KC 인증 완료.</p>
+    </div>
+    <div class="spec-table reveal">
+      <table>
+        <tr><th>제품 구분</th><td>멀티미디어학습장치 · 가상체험형 — <b>나라장터 물품식별번호 25164611</b></td></tr>
+        <tr><th>크기</th><td>600 × 480 × 900 mm · 손잡이 + 스톱퍼 바퀴 · 수납부 · 접이식 선반(모니터 추가 가능)</td></tr>
+        <tr><th>투사</th><td><b>초단초점(UST) 프로젝터</b> — 5,000안시 · Full-HD</td></tr>
+        <tr><th>스크린 사이즈</th><td>바닥형 — <b>폭 2.4m</b></td></tr>
+        <tr><th>센서</th><td>모션센서 <b>하단 매립형</b> — 발걸음 위치 실시간 감지, 충격 파손 방지 설계</td></tr>
+        <tr><th>입출력</th><td>USB · HDMI · LAN · 추가 콘센트</td></tr>
+        <tr><th>전원 / 소비전력</th><td>AC 100~240V, 50/60Hz · 366W — 메인 전원 일괄 기동</td></tr>
+        <tr><th>기본 콘텐츠</th><td><b>스텝온더플로어</b> — 디지털 꽃길 · 구름길 · 연못 · 트릭아트 퀴즈/게임 (자체 개발 저작권 등록 콘텐츠)</td></tr>
+        <tr><th>구매 방식</th><td>행사 렌탈 · 상설 구매 · 학교/관공서는 <b>나라장터(종합쇼핑몰) · 학교장터(S2B)</b></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <span class="tag">FAQ</span>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary><span class="q">Q</span>정말 전원만 있으면 되나요?<span class="arrow">▼</span></summary>
+        <div class="a">
+          네. 이프(이동형 프로젝션) 시리즈는 <b>이동·설치가 쉽게 설계된 일체형 장비</b>라 콘센트에 연결하면 켜집니다.
+          도착부터 테스트까지 평균 <b>60분</b>, 바닥 공사·타공이 전혀 없습니다.
+          인터넷이 필요한 콘텐츠는 <span class="hl">유선(이더넷) 연결이 가장 안정적</span>입니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span>콘텐츠를 우리 행사에 맞게 바꿀 수 있나요?<span class="arrow">▼</span></summary>
+        <div class="a">
+          기본 콘텐츠(꽃길·구름길·연못·퀴즈/게임)는 <b>추가 비용 없이 선택</b>할 수 있고,
+          행사 로고·캐릭터·테마를 입힌 <span class="hl">커스텀 콘텐츠</span>는 별도 협의로 제작해 드립니다.
+          퀴즈 콘텐츠는 문제를 직접 바꿔 낼 수도 있습니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span>야외에서도 되나요?<span class="arrow">▼</span></summary>
+        <div class="a">
+          네, 유성 재즈&amp;맥주 페스타처럼 <b>야외 행사 운영 사례</b>가 있습니다.
+          상부 투사 방식이라 <span class="hl">해가 진 야간 시간대</span>에 가장 선명하며, 야외 운영은 환경(전원·우천 대비)을 상담을 통해 함께 설계합니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span>운영 인력이 함께 오나요?<span class="arrow">▼</span></summary>
+        <div class="a">
+          조작이 간단해서, 행사 측에서 <b>운영 인력을 배치할 수 있다면 직접 운영이 가능합니다.</b>
+          설치 시 사용 방법을 안내해 드리며, 필요한 경우 운영 지원 구성도 협의할 수 있습니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="q">Q</span>렌탈 말고 구매도 가능한가요?<span class="arrow">▼</span></summary>
+        <div class="a">
+          네, 둘 다 가능합니다. 단기 행사는 <b>렌탈</b>, 병원 대기실처럼 상시 운영은 <b>구매</b>를 추천드립니다.
+          학교·관공서는 <span class="hl">나라장터 및 학교장터(S2B)</span>를 통해 구매하실 수 있습니다.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/logo_white.png" alt="PAINTPAM 로고" style="height:30px;margin-bottom:28px;opacity:.95">
+    <h2 class="reveal">다음 행사의 바닥,<br><em>그냥 두실 건가요?</em></h2>
+    <p class="sub reveal">행사 일정·장소·원하는 콘텐츠만 알려주시면, 커스텀 구성과 견적을 빠르게 안내해 드립니다.</p>
+    <div class="contact-btns reveal">
+      <a class="btn btn-green" href="mailto:paintpam@naver.com?subject=%EC%9D%B4%ED%94%84F%20%EB%B0%94%EB%8B%A5%20%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C%20%EB%A0%8C%ED%83%88%20%EA%B2%AC%EC%A0%81%20%EB%AC%B8%EC%9D%98&body=%ED%96%89%EC%82%AC%EB%AA%85%3A%0A%ED%96%89%EC%82%AC%20%EC%9D%BC%EC%A0%95%3A%0A%ED%96%89%EC%82%AC%20%EC%9E%A5%EC%86%8C(%EC%8B%A4%EB%82%B4%2F%EC%95%BC%EC%99%B8)%3A%0A%EC%9B%90%ED%95%98%EB%8A%94%20%EC%BD%98%ED%85%90%EC%B8%A0%3A%0A%EC%97%B0%EB%9D%BD%EC%B2%98%3A">렌탈 견적 문의</a>
+      <a class="btn btn-dark" href="https://www.youtube.com/@PAINTPAM2015" target="_blank" rel="noopener">영상으로 보기 ↗</a>
+    </div>
+    <div class="contact-meta reveal">
+      <span>공식: <a href="https://www.paintpam.com" target="_blank" rel="noopener">paintpam.com</a></span>
+      <span>블로그: <a href="https://blog.paintpam.com" target="_blank" rel="noopener">blog.paintpam.com</a></span>
+      <span>유튜브: <a href="https://www.youtube.com/@PAINTPAM2015" target="_blank" rel="noopener">@PAINTPAM2015</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERIES ============ -->
+<section id="series">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center">
+      <span class="tag">이동형 프로젝션</span>
+      <h2>이프 시리즈, 더 만나보세요</h2>
+      <p style="margin-left:auto;margin-right:auto">이프는 '이동형 프로젝션'입니다 — 전원만 연결하면 60분 만에 완성되는 이프F의 형제들입니다.</p>
+    </div>
+    <div class="series-grid">
+      <a class="scard reveal" href="/if-c">
+        <div class="ph"><img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_c_samsung.jpg" alt="이프C 투명 전자 방명록" loading="lazy"></div>
+        <div class="tx">
+          <div class="tag2">이프C · 투명 전자 방명록</div>
+          <h3>이프C — 서명이 빛으로 남다</h3>
+          <p>VIP 서명이 투명 화면에 빛으로 새겨지고 대형 LED로 송출되는 프리미엄 서명식. 삼성전자·KT·문체부의 선택.</p>
+          <span class="go">자세히 보기 →</span>
+        </div>
+      </a>
+      <a class="scard reveal" href="/if-h">
+        <div class="ph"><img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/case_h_hiking.jpg" alt="이프H 대형 인터랙티브 스크린" loading="lazy"></div>
+        <div class="tx">
+          <div class="tag2">이프H · 대형 인터랙티브</div>
+          <h3>이프H — 몸으로 부딪히는 대형 스크린</h3>
+          <p>세로형 대형 스크린에 모션센서를 결합한 실감 체험. 스크린 등산·둘레길 걷기·체험 게임까지.</p>
+          <span class="go">자세히 보기 →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+const track=document.getElementById('stripTrack');
+track.innerHTML+=track.innerHTML;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</div>
+<script>const _io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');_io.unobserve(e.target);}}),{threshold:.1});document.querySelectorAll('.ifpg .reveal').forEach(el=>_io.observe(el));const _t=document.getElementById('stripTrack');if(_t){_t.innerHTML+=_t.innerHTML;}</script>
