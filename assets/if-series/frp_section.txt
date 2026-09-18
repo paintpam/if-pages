@@ -1,0 +1,67 @@
+<section class="sec frp" style="padding-top:0;">
+<style>
+.frp .frp-wrap{max-width:1100px;margin:0 auto;padding:0 20px;word-break:keep-all;overflow-wrap:break-word}
+.frp .frp-head{text-align:center;margin-bottom:14px}
+.frp .frp-kick{display:inline-block;font-size:12px;letter-spacing:.18em;font-weight:700;color:#C0401D;background:#FBF0EC;border-radius:999px;padding:6px 14px;margin-bottom:14px}
+.frp h2.frp-h2{font-size:clamp(24px,3vw,34px);font-weight:800;line-height:1.4;letter-spacing:-.02em;color:#212121;margin:0 0 14px}
+.frp .frp-lead{font-size:15.5px;line-height:1.85;color:#5C666D;max-width:780px;margin:0 auto 34px;text-align:center}
+.frp .frp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.frp .frp-card{border:1px solid #E2E6E8;border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.frp .frp-shot{aspect-ratio:16/9;background:#EEF1F2;overflow:hidden}
+.frp .frp-shot img{width:100%;height:100%;object-fit:cover;display:block;visibility:visible!important;opacity:1!important}
+.frp .frp-body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.frp .frp-top{display:flex;align-items:center;gap:9px;margin-bottom:10px;flex-wrap:wrap}
+.frp .frp-name{font-size:18px;font-weight:800;color:#212121;letter-spacing:-.01em}
+.frp .frp-season{font-size:11.5px;font-weight:700;color:#636D74;border:1px solid #E2E6E8;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.frp .frp-blurb{font-size:14.5px;line-height:1.8;color:#212121;margin:0 0 13px}
+.frp .frp-spec{font-size:13px;line-height:1.75;color:#5C666D;margin:0 0 13px;padding-top:12px;border-top:1px solid #EEF1F2}
+.frp .frp-spec b{color:#212121;font-weight:700}
+.frp .frp-fit{margin-top:auto;font-size:12.5px;font-weight:700;color:#C0401D}
+.frp .frp-note{margin-top:26px;font-size:14px;line-height:1.85;color:#5C666D;text-align:center;background:#F7F8F9;border-radius:14px;padding:20px 24px}
+@media(max-width:900px){.frp .frp-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.frp .frp-grid{grid-template-columns:1fr}.frp .frp-lead{margin-bottom:24px}}
+</style>
+<div class="frp-wrap">
+  <div class="frp-head">
+    <span class="frp-kick">테마 팩</span>
+    <h2 class="frp-h2">같은 바닥, 다른 이야기</h2>
+  </div>
+  <p class="frp-lead">장비는 그대로 두고 바닥에 깔리는 것만 바꿉니다. 봄에는 꽃길, 가을에는 단풍길, 밤 행사에는 발광하는 물결로 — 같은 자리에서 계절과 행사 성격에 맞는 이야기를 씁니다.</p>
+
+  <div class="frp-grid">
+
+    <div class="frp-card">
+      <div class="frp-shot"><img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/fr_flower_road.jpg" alt="디지털 꽃길 — 꽃잎이 밀려나며 바닥의 축하 메시지가 드러나는 화면" loading="lazy"></div>
+      <div class="frp-body">
+        <div class="frp-top"><span class="frp-name">꽃길</span><span class="frp-season">봄 · 연중</span></div>
+        <p class="frp-blurb">밟으면 꽃잎이 날아오르며 아래 그림이 드러납니다.</p>
+        <p class="frp-spec"><b>꽃잎·꽃송이 10종</b><br>벚꽃 · 매화 · 목련 · 튤립 · 동백 · 장미 꽃잎, 수국 낱꽃, 코스모스, 동백 송이, 벚꽃 송이</p>
+        <p class="frp-fit">웨딩 · 시상식 · 기업 행사</p>
+      </div>
+    </div>
+
+    <div class="frp-card">
+      <div class="frp-shot"><img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/fr_autumn_leaves.jpg" alt="디지털 단풍길 — 낙엽이 밀려나며 바닥의 가을 문구가 드러나는 화면" loading="lazy"></div>
+      <div class="frp-body">
+        <div class="frp-top"><span class="frp-name">단풍길</span><span class="frp-season">가을 9~12월</span></div>
+        <p class="frp-blurb">마른 낙엽이 발끝에서 바스락거리며 흩어집니다.</p>
+        <p class="frp-spec"><b>낙엽 4종</b><br>단풍잎 · 은행잎 · 참나무잎 · 벚나무잎</p>
+        <p class="frp-fit">가을 전시 · 지역 축제</p>
+      </div>
+    </div>
+
+    <div class="frp-card">
+      <div class="frp-shot"><img src="https://cdn.jsdelivr.net/gh/paintpam/if-pages@main/assets/if-series/fr_starry_wave.jpg" alt="밤바다 — 검은 바닥 위 발광하는 파도와 발자국 파문" loading="lazy"></div>
+      <div class="frp-body">
+        <div class="frp-top"><span class="frp-name">밤바다</span><span class="frp-season">연중 · 야간</span></div>
+        <p class="frp-blurb">검은 바닥 위로 발광하는 파도가 흐릅니다. 밟으면 그 자리에서 파문이 퍼집니다.</p>
+        <p class="frp-spec"><b>톤 3가지</b><br>잔잔 · 가득 · 보라. 아무도 밟지 않아도 밀물이 계속 흐르기 때문에, 서서 대화하는 자리에 맞습니다</p>
+        <p class="frp-fit">야간 행사 · 라운지 · 로비</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="frp-note">위 세 장은 <b>같은 장비, 같은 자리</b>에서 카펫만 바꾼 화면입니다. 행사 성격이 정해지면 팩과 함께 <b>밟았을 때 드러날 아래 그림</b>(로고 · 문구 · 행사 비주얼)을 같이 준비해 드립니다.</p>
+</div>
+</section>
