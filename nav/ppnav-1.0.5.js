@@ -166,7 +166,7 @@
     ] },
     /* 스크린페인트: /product 허브 + 바르는 면 4종(2026-11-10) */
     { hub: "/product", hash: "#types", label: "스크린페인트", short: "스크린페인트", products: [
-      ["/SPG", "유리용 SPG"], ["/SPW_main", "벽용 SPW"], ["/spf", "바닥용 SPF"], ["/mpc", "판서용 MPC"]
+      ["/SPG", "유리 SPG"], ["/SPW_main", "벽 SPW"], ["/spf", "바닥 SPF"], ["/mpc", "판서 MPC"]
     ] }
   ];
   var FAM = FAMILIES[0], PRODUCTS = FAM.products, HUB = FAM.hub;
